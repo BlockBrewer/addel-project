@@ -48,6 +48,7 @@ const ProductTemplate: React.FC<ProductTemplateProps> = ({
                   region={region}
                   details={
                     <p
+                      key="description"
                       className="text-sm leading-6 text-aqua-navy/80 whitespace-pre-line"
                       data-testid="product-description"
                     >

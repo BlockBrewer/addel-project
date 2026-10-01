@@ -2,26 +2,38 @@ import { HttpTypes } from "@medusajs/types"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 import Rating from "@modules/home/components/rating"
 import { ChevronRight } from "@modules/home/components/icons"
+import { listCategories } from "@lib/data/categories"
 
 type ProductInfoProps = {
   product: HttpTypes.StoreProduct
 }
 
-// Walk up a category's parent chain, root first.
-const categoryPath = (cat?: HttpTypes.StoreProductCategory | null) => {
+// Walk up a category's parent chain (resolved from the full category list), root first.
+const categoryPath = (
+  cat: HttpTypes.StoreProductCategory | undefined,
+  byId: Map<string, HttpTypes.StoreProductCategory>
+) => {
   const path: HttpTypes.StoreProductCategory[] = []
-  let cur: HttpTypes.StoreProductCategory | null | undefined = cat
+  let cur = cat
   while (cur) {
     path.unshift(cur)
-    cur = cur.parent_category
+    cur = cur.parent_category_id ? byId.get(cur.parent_category_id) : undefined
   }
   return path
 }
 
-export const Breadcrumb = ({ product }: ProductInfoProps) => {
+export const Breadcrumb = async ({ product }: ProductInfoProps) => {
+  const all = await listCategories({
+    limit: 200,
+    fields: "id,name,handle,parent_category_id",
+  }).catch(() => [])
+  const byId = new Map(all.map((c) => [c.id, c]))
+
   // Prefer the deepest category.
-  const cats = (product.categories ?? []).map((c) => categoryPath(c))
-  const path = cats.sort((a, b) => b.length - a.length)[0] ?? []
+  const paths = (product.categories ?? []).map((c) =>
+    categoryPath(byId.get(c.id) ?? c, byId)
+  )
+  const path = paths.sort((a, b) => b.length - a.length)[0] ?? []
   const base = "/categories/"
 
   return (

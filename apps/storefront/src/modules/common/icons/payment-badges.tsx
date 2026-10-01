@@ -18,7 +18,7 @@ export const PaymentBadges = () => (
       </span>
     </li>
     <li className={box}>
-      <span className="text-[13px] font-semibold text-black">Apple Pay</span>
+      <span className="whitespace-nowrap text-[12px] font-semibold text-black">Apple Pay</span>
     </li>
     <li className={box}>
       <span className="text-[13px] font-semibold">

@@ -38,7 +38,7 @@ export default function HeroCarousel() {
     >
       <div className="relative grid min-h-[360px] items-center lg:min-h-[690px] lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
         {/* Copy */}
-        <div className="relative z-10 px-8 pb-6 pt-12 sm:px-12 lg:pl-[8%] lg:pr-0 lg:pt-0">
+        <div className="relative z-10 px-8 pb-6 pt-12 sm:px-12 lg:pl-[12%] lg:pr-0 lg:pt-0">
           <h1 className="font-serif text-5xl leading-[1.05] text-aqua-navy sm:text-6xl lg:text-[76px]">
             Create More.
             <span className="block text-aqua">Inspire More.</span>

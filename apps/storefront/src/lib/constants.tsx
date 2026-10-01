@@ -31,7 +31,7 @@ export const paymentInfoMap: Record<
     icon: <PayPal />,
   },
   pp_system_default: {
-    title: "Cash on Delivery",
+    title: "Manual payment (test mode)",
     icon: <Cash />,
   },
   // Add more payment providers here

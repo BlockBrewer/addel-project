@@ -9,6 +9,7 @@ import OrderDetails from "@modules/order/components/order-details"
 import ShippingDetails from "@modules/order/components/shipping-details"
 import PaymentDetails from "@modules/order/components/payment-details"
 import { HttpTypes } from "@medusajs/types"
+import OrderDownloads from "@modules/digital-products/components/order-downloads"
 
 type OrderCompletedTemplateProps = {
   order: HttpTypes.StoreOrder
@@ -37,6 +38,7 @@ export default async function OrderCompletedTemplate({
             <span>Your order was placed successfully.</span>
           </Heading>
           <OrderDetails order={order} />
+          <OrderDownloads orderId={order.id} />
           <Heading level="h2" className="flex flex-row text-3xl-regular">
             Summary
           </Heading>

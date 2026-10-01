@@ -50,7 +50,7 @@ export default async function digitalOrderPlacedHandler({
 
   const digitalOrder = await service.createDigitalProductOrders({
     status: OrderStatus.SENT,
-    products: productIds.map((id) => ({ id })),
+    products: productIds,
   } as any)
 
   await link.create({
