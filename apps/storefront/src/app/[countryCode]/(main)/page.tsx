@@ -25,11 +25,11 @@ export default async function Home(props: {
       <HeroCarousel />
       <CategoryTiles />
       <ValueProps />
-      <div className="grid items-start gap-8 xl:grid-cols-[minmax(0,1.75fr)_minmax(0,1fr)]">
+      <div className="grid grid-cols-1 items-start gap-8 xl:grid-cols-[minmax(0,1.75fr)_minmax(0,1fr)]">
         <Trending countryCode={countryCode} />
         <ShopByCraft />
       </div>
-      <div className="grid items-stretch gap-6 lg:grid-cols-3">
+      <div className="grid grid-cols-1 items-stretch gap-6 lg:grid-cols-3">
         <HowItWorks />
         <Reviews />
         <Newsletter />

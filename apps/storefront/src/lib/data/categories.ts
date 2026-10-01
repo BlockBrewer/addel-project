@@ -27,7 +27,8 @@ export const listCategories = async (query?: Record<string, unknown>) => {
 }
 
 export const getCategoryByHandle = async (categoryHandle: string[]) => {
-  const handle = `${categoryHandle.join("/")}`
+  // Medusa category handles are single segments; the URL path is hierarchical.
+  const handle = categoryHandle[categoryHandle.length - 1]
 
   const next = {
     ...(await getCacheOptions("categories")),

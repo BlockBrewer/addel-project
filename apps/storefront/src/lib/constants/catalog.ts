@@ -21,7 +21,7 @@ export const CATALOG: CatalogCategory[] = [
     handle: "canva-templates",
     children: [
       { label: "Social Media", handle: "social-media" },
-      { label: "Instagram", handle: "instagram" },
+      { label: "Instagram", handle: "social-media/instagram" },
       { label: "Pinterest Pins", handle: "pinterest-pins" },
     ],
   },

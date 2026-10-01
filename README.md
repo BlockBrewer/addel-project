@@ -156,3 +156,21 @@ The storefront is configured via environment variables in `apps/storefront/.env.
 
 - [Medusa Documentation](https://docs.medusajs.com)
 - [Medusa Cloud](https://cloud.medusajs.com)
+
+## AquaCraft (digital products store)
+
+This repo is the AquaCraft storefront (Next.js) + Medusa backend, selling digital downloads.
+
+**Setup**
+1. `cp apps/backend/.env.template apps/backend/.env` (set `DATABASE_URL`), then `npx medusa db:migrate` in `apps/backend`.
+2. `npm run backend:seed:aquacraft` — creates the USD region, categories, 7 demo products and a placeholder download for each.
+3. Create `apps/storefront/.env.local` with `NEXT_PUBLIC_MEDUSA_PUBLISHABLE_KEY`, `NEXT_PUBLIC_MEDUSA_BACKEND_URL=http://localhost:9000`, `NEXT_PUBLIC_DEFAULT_REGION=us`.
+4. `npm run dev`.
+
+**Digital delivery**
+- Products have no shipping profile, so checkout skips shipping. After an order is placed, the `digital-product` module (`apps/backend/src/modules/digital-product`) records the purchase; downloads appear on the order confirmation page and in My Account → Downloads.
+- Attach real files in the admin: Products → variant → *Digital files*.
+- Production: use the S3 file provider with private access instead of the local provider (local files are served from `/static`).
+- Payments: only the manual/test provider is configured. Add the Stripe provider in `medusa-config.ts` for real payments.
+
+**Artwork**: placeholder images cropped from the design mockups live in `apps/storefront/public/aquacraft/` — replace the files (same names) with real art. Membership is UI-only (`/membership`); newsletter forms are not connected to a provider yet.
