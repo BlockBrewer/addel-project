@@ -12,11 +12,13 @@ const ShippingAddress = ({
   cart,
   checked,
   onChange,
+  digital = false,
 }: {
   customer: HttpTypes.StoreCustomer | null
   cart: HttpTypes.StoreCart | null
   checked: boolean
   onChange: () => void
+  digital?: boolean
 }) => {
   const [formData, setFormData] = useState<Record<string, string>>({
     "shipping_address.first_name": cart?.shipping_address?.first_name || "",
@@ -184,15 +186,23 @@ const ShippingAddress = ({
           data-testid="shipping-province-input"
         />
       </div>
-      <div className="my-8">
-        <Checkbox
-          label="Billing address same as shipping address"
-          name="same_as_billing"
-          checked={checked}
-          onChange={onChange}
-          data-testid="billing-address-checkbox"
-        />
-      </div>
+      {digital ? (
+        // Digital orders have no shipping address: the form above is the
+        // billing address, so billing is always "same as shipping".
+        <div className="my-4">
+          <input type="hidden" name="same_as_billing" value="on" />
+        </div>
+      ) : (
+        <div className="my-8">
+          <Checkbox
+            label="Billing address same as shipping address"
+            name="same_as_billing"
+            checked={checked}
+            onChange={onChange}
+            data-testid="billing-address-checkbox"
+          />
+        </div>
+      )}
       <div className="grid grid-cols-2 gap-4 mb-4">
         <Input
           label="Email"

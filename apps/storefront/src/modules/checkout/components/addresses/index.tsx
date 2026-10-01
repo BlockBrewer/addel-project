@@ -17,9 +17,11 @@ import { SubmitButton } from "../submit-button"
 const Addresses = ({
   cart,
   customer,
+  digital = false,
 }: {
   cart: HttpTypes.StoreCart | null
   customer: HttpTypes.StoreCustomer | null
+  digital?: boolean
 }) => {
   const searchParams = useSearchParams()
   const router = useRouter()
@@ -46,7 +48,7 @@ const Addresses = ({
           level="h2"
           className="flex flex-row text-3xl-regular gap-x-2 items-baseline"
         >
-          Shipping Address
+          {digital ? "Contact & Billing" : "Shipping Address"}
           {!isOpen && <CheckCircleSolid />}
         </Heading>
         {!isOpen && cart?.shipping_address && (
@@ -63,15 +65,17 @@ const Addresses = ({
       </div>
       {isOpen ? (
         <form action={formAction}>
+          {digital && <input type="hidden" name="digital" value="1" />}
           <div className="pb-8">
             <ShippingAddress
               customer={customer}
-              checked={sameAsBilling}
+              digital={digital}
+              checked={digital ? true : sameAsBilling}
               onChange={toggleSameAsBilling}
               cart={cart}
             />
 
-            {!sameAsBilling && (
+            {!digital && !sameAsBilling && (
               <div>
                 <Heading
                   level="h2"
@@ -84,7 +88,7 @@ const Addresses = ({
               </div>
             )}
             <SubmitButton className="mt-6" data-testid="submit-address-button">
-              Continue to delivery
+              {digital ? "Continue to payment" : "Continue to delivery"}
             </SubmitButton>
             <ErrorMessage error={message} data-testid="address-error-message" />
           </div>
@@ -100,7 +104,7 @@ const Addresses = ({
                     data-testid="shipping-address-summary"
                   >
                     <Text className="txt-medium-plus text-ui-fg-base mb-1">
-                      Shipping Address
+                      {digital ? "Billing Address" : "Shipping Address"}
                     </Text>
                     <Text className="txt-medium text-ui-fg-subtle">
                       {cart.shipping_address.first_name}{" "}
@@ -135,7 +139,7 @@ const Addresses = ({
                   </div>
 
                   <div
-                    className="flex flex-col w-1/3"
+                    className={digital ? "hidden" : "flex flex-col w-1/3"}
                     data-testid="billing-address-summary"
                   >
                     <Text className="txt-medium-plus text-ui-fg-base mb-1">

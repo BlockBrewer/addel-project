@@ -9,6 +9,11 @@ type ShippingDetailsProps = {
 }
 
 const ShippingDetails = ({ order }: ShippingDetailsProps) => {
+  // Digital-only orders have nothing to deliver.
+  if (!order.shipping_methods?.length) {
+    return null
+  }
+
   return (
     <div>
       <Heading level="h2" className="flex flex-row text-3xl-regular my-6">

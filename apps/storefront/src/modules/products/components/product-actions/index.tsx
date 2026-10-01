@@ -3,13 +3,14 @@
 import { addToCart } from "@lib/data/cart"
 import { useIntersection } from "@lib/hooks/use-in-view"
 import { HttpTypes } from "@medusajs/types"
-import { Button } from "@modules/common/components/ui"
 import Divider from "@modules/common/components/divider"
 import OptionSelect from "@modules/products/components/product-actions/option-select"
 import { isEqual } from "lodash"
 import { useParams, usePathname, useSearchParams } from "next/navigation"
 import { useEffect, useMemo, useRef, useState } from "react"
-import ProductPrice from "../product-price"
+import { getProductPrice } from "@lib/util/get-product-price"
+import { convertToLocale } from "@lib/util/money"
+import { Lock } from "@modules/home/components/icons"
 import MobileActions from "./mobile-actions"
 import { useRouter } from "next/navigation"
 
@@ -17,6 +18,8 @@ type ProductActionsProps = {
   product: HttpTypes.StoreProduct
   region: HttpTypes.StoreRegion
   disabled?: boolean
+  /** Rendered between the price and the buttons (description, features) */
+  details?: React.ReactNode
 }
 
 const optionsAsKeymap = (
@@ -31,6 +34,7 @@ const optionsAsKeymap = (
 export default function ProductActions({
   product,
   disabled,
+  details,
 }: ProductActionsProps) {
   const router = useRouter()
   const pathname = usePathname()
@@ -38,6 +42,7 @@ export default function ProductActions({
 
   const [options, setOptions] = useState<Record<string, string | undefined>>({})
   const [isAdding, setIsAdding] = useState(false)
+  const [isBuying, setIsBuying] = useState(false)
   const countryCode = useParams().countryCode as string
 
   // If there is only 1 variant, preselect the options
@@ -135,6 +140,40 @@ export default function ProductActions({
     setIsAdding(false)
   }
 
+  // add to cart, then go straight to checkout
+  const handleBuyNow = async () => {
+    if (!selectedVariant?.id) return null
+
+    setIsBuying(true)
+
+    await addToCart({
+      variantId: selectedVariant.id,
+      quantity: 1,
+      countryCode,
+    })
+
+    router.push(`/${countryCode}/checkout`)
+  }
+
+  const { cheapestPrice, variantPrice } = getProductPrice({
+    product,
+    variantId: selectedVariant?.id,
+  })
+  const price = selectedVariant ? variantPrice : cheapestPrice
+  const meta = (product.metadata ?? {}) as Record<string, unknown>
+  const compareAt = Number(meta.compare_at_price ?? 0)
+  const showCompare =
+    !!price && compareAt > price.calculated_price_number
+  const savePct = showCompare
+    ? Math.round((1 - price!.calculated_price_number / compareAt) * 100)
+    : 0
+  const features = String(meta.features ?? "")
+    .split("|")
+    .map((f) => f.trim())
+    .filter(Boolean)
+  const busy = !!disabled || isAdding || isBuying
+  const canBuy = inStock && !!selectedVariant && isValidVariant
+
   return (
     <>
       <div className="flex flex-col gap-y-2" ref={actionsRef}>
@@ -160,28 +199,74 @@ export default function ProductActions({
           )}
         </div>
 
-        <ProductPrice product={product} variant={selectedVariant} />
+        {price ? (
+          <div className="flex flex-wrap items-center gap-3">
+            <span
+              className="text-3xl font-bold text-aqua-navy"
+              data-testid="product-price"
+              data-value={price.calculated_price_number}
+            >
+              {price.calculated_price}
+            </span>
+            {showCompare && (
+              <>
+                <span className="text-base text-aqua-navy/40 line-through" data-testid="original-product-price">
+                  {convertToLocale({ amount: compareAt, currency_code: price.currency_code })}
+                </span>
+                <span className="rounded bg-aqua-light px-2 py-1 text-xs font-semibold text-aqua-dark">
+                  Save {savePct}%
+                </span>
+              </>
+            )}
+          </div>
+        ) : (
+          <div className="block h-9 w-32 animate-pulse bg-gray-100" />
+        )}
 
-        <Button
-          onClick={handleAddToCart}
-          disabled={
-            !inStock ||
-            !selectedVariant ||
-            !!disabled ||
-            isAdding ||
-            !isValidVariant
-          }
-          variant="primary"
-          className="w-full h-10"
-          isLoading={isAdding}
-          data-testid="add-product-button"
-        >
-          {!selectedVariant && !options
-            ? "Select variant"
-            : !inStock || !isValidVariant
-            ? "Out of stock"
-            : "Add to cart"}
-        </Button>
+        {details}
+
+        {features.length > 0 && (
+          <ul className="mt-1 space-y-2.5">
+            {features.map((f) => (
+              <li key={f} className="flex items-center gap-2.5 text-sm text-aqua-navy">
+                <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-aqua text-white">
+                  <svg viewBox="0 0 24 24" className="h-3 w-3" fill="none" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round"><path d="m20 6-11 11-5-5" /></svg>
+                </span>
+                {f}
+              </li>
+            ))}
+          </ul>
+        )}
+
+        <div className="mt-5 flex gap-3">
+          <button
+            type="button"
+            onClick={handleAddToCart}
+            disabled={!canBuy || busy}
+            className="h-12 flex-1 rounded-md bg-aqua px-6 text-sm font-semibold text-white transition-colors hover:bg-aqua-dark disabled:cursor-not-allowed disabled:opacity-50"
+            data-testid="add-product-button"
+          >
+            {isAdding
+              ? "Adding..."
+              : !selectedVariant && !options
+              ? "Select variant"
+              : !inStock || !isValidVariant
+              ? "Unavailable"
+              : "Add to Cart"}
+          </button>
+          <button
+            type="button"
+            onClick={handleBuyNow}
+            disabled={!canBuy || busy}
+            className="h-12 flex-1 rounded-md border border-aqua-dark bg-white px-6 text-sm font-semibold text-aqua-navy transition-colors hover:bg-aqua-mist disabled:cursor-not-allowed disabled:opacity-50"
+            data-testid="buy-now-button"
+          >
+            {isBuying ? "Redirecting..." : "Buy Now"}
+          </button>
+        </div>
+        <p className="mt-3 flex items-center justify-center gap-1.5 text-xs text-aqua-navy/70">
+          <Lock className="h-3.5 w-3.5" /> Secure Checkout
+        </p>
         <MobileActions
           product={product}
           variant={selectedVariant}

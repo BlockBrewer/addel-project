@@ -381,8 +381,10 @@ export async function setAddresses(currentState: unknown, formData: FormData) {
     return e.message
   }
 
+  // Digital-only carts have no delivery step.
+  const nextStep = formData.get("digital") ? "payment" : "delivery"
   redirect(
-    `/${formData.get("shipping_address.country_code")}/checkout?step=delivery`
+    `/${formData.get("shipping_address.country_code")}/checkout?step=${nextStep}`
   )
 }
 
