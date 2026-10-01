@@ -1,0 +1,27 @@
+[    3396ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:14537
+[   14172ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5956
+[   14417ms] [LOG] [Fast Refresh] done in 345ms @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5816
+[   14878ms] [WARNING] Image with src "https://medusa-public-images.s3.eu-west-1.amazonaws.com/sweatshirt-vintage-front.png" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_b0daae9a._.js:1014
+[   14879ms] [WARNING] Image with src "https://medusa-public-images.s3.eu-west-1.amazonaws.com/shorts-vintage-front.png" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_b0daae9a._.js:1014
+[   14880ms] [WARNING] Image with src "https://medusa-public-images.s3.eu-west-1.amazonaws.com/sweatpants-gray-front.png" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_b0daae9a._.js:1014
+[   14880ms] [WARNING] Image with src "https://medusa-public-images.s3.eu-west-1.amazonaws.com/tee-black-front.png" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_b0daae9a._.js:1014
+[   18716ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5956
+[   19074ms] [LOG] [Fast Refresh] done in 458ms @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5816
+[  945110ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5956
+[  945299ms] [LOG] [Fast Refresh] done in 289ms @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5816
+[ 1188208ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5956
+[ 1188496ms] [LOG] [Fast Refresh] done in 389ms @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5816
+[ 1587629ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5956
+[ 1587952ms] [LOG] [Fast Refresh] done in 425ms @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5816
+[ 2076644ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5956
+[ 2076727ms] [LOG] [Fast Refresh] done in 58ms @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5816
+[ 2077006ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5956
+[ 2077051ms] [LOG] [Fast Refresh] done in 145ms @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5816
+[ 2077247ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:8000/pk/dk/products/sweatshirt:0
+[ 2077330ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:14537
+[ 2084916ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5956
+[ 2084942ms] [LOG] [Fast Refresh] done in 127ms @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5816

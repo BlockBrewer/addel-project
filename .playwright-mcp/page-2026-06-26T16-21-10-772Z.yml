@@ -1,0 +1,99 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - navigation [ref=e5]:
+        - link "Back to shopping cart" [ref=e6] [cursor=pointer]:
+          - /url: /pk/cart
+          - img [ref=e7]
+          - generic [ref=e9]: Back to shopping cart
+        - link "Medusa Store" [ref=e10] [cursor=pointer]:
+          - /url: /pk
+      - generic [ref=e12]:
+        - generic [ref=e14]:
+          - generic [ref=e15]:
+            - generic [ref=e16]:
+              - heading "Shipping Address" [level=2] [ref=e17]:
+                - text: Shipping Address
+                - img [ref=e18]
+              - paragraph [ref=e21]:
+                - button "Edit" [ref=e22] [cursor=pointer]
+            - generic [ref=e26]:
+              - generic [ref=e27]:
+                - paragraph [ref=e28]: Shipping Address
+                - paragraph [ref=e29]: Ahmed Khan
+                - paragraph [ref=e30]: 12 Mall Road
+                - paragraph [ref=e31]: 54000, Lahore
+                - paragraph [ref=e32]: PK
+              - generic [ref=e33]:
+                - paragraph [ref=e34]: Contact
+                - paragraph
+                - paragraph [ref=e35]: ahmed.khan@example.com
+              - generic [ref=e36]:
+                - paragraph [ref=e37]: Billing Address
+                - paragraph [ref=e38]: Billing and delivery address are the same.
+          - generic [ref=e40]:
+            - generic [ref=e41]:
+              - heading "Delivery" [level=2] [ref=e42]:
+                - text: Delivery
+                - img [ref=e43]
+              - paragraph [ref=e46]:
+                - button "Edit" [ref=e47] [cursor=pointer]
+            - generic [ref=e50]:
+              - paragraph [ref=e51]: Method
+              - paragraph [ref=e52]: Standard Delivery PKR 200
+          - generic [ref=e54]:
+            - heading "Payment" [level=2] [ref=e56]
+            - generic [ref=e58]:
+              - radiogroup [ref=e59]:
+                - radio "Cash on Delivery" [ref=e61] [cursor=pointer]:
+                  - generic [ref=e62]:
+                    - generic [ref=e63]:
+                      - radio [checked] [ref=e64]
+                      - paragraph [ref=e66]: Cash on Delivery
+                    - img [ref=e68]
+              - button "Continue to review" [disabled]
+          - generic [ref=e73]:
+            - heading "Review" [level=2]
+        - generic [ref=e75]:
+          - heading "In your Cart" [level=2] [ref=e76]
+          - generic [ref=e78]:
+            - generic [ref=e79]:
+              - generic [ref=e80]:
+                - generic [ref=e81]: Subtotal (excl. shipping and taxes)
+                - generic [ref=e82]: PKR 1,650
+              - generic [ref=e83]:
+                - generic [ref=e84]: Shipping
+                - generic [ref=e85]: PKR 200
+              - generic [ref=e86]:
+                - generic [ref=e87]: Taxes
+                - generic [ref=e88]: PKR 0
+            - generic [ref=e90]:
+              - generic [ref=e91]: Total
+              - generic [ref=e92]: PKR 1,850
+          - table [ref=e95]:
+            - rowgroup [ref=e96]:
+              - 'row "Thumbnail Premium Desi Ghee Variant: 500ml 1x PKR 1,650 PKR 1,650" [ref=e97]':
+                - cell "Thumbnail" [ref=e98]:
+                  - link "Thumbnail" [ref=e99] [cursor=pointer]:
+                    - /url: /pk/products/desi-ghee
+                    - img "Thumbnail" [ref=e101]
+                - 'cell "Premium Desi Ghee Variant: 500ml" [ref=e102]':
+                  - paragraph [ref=e103]: Premium Desi Ghee
+                  - paragraph [ref=e104]: "Variant: 500ml"
+                - cell "1x PKR 1,650 PKR 1,650" [ref=e105]:
+                  - generic [ref=e106]:
+                    - generic [ref=e107]:
+                      - paragraph [ref=e108]: 1x
+                      - generic [ref=e110]: PKR 1,650
+                    - generic [ref=e112]: PKR 1,650
+          - button [ref=e118] [cursor=pointer]: Add Promotion Code(s)
+      - paragraph [ref=e120]:
+        - text: Powered by
+        - link [ref=e121] [cursor=pointer]:
+          - /url: https://www.medusajs.com
+          - img [ref=e122]
+        - text: "&"
+        - link [ref=e124] [cursor=pointer]:
+          - /url: https://nextjs.org
+          - img [ref=e125]
+  - alert [ref=e127]

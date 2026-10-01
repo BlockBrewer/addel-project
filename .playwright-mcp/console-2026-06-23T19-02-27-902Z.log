@@ -1,0 +1,57 @@
+[     503ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:14537
+[     573ms] [WARNING] Image with src "http://localhost:8000/fitrat/desi-ghee.png" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_b0daae9a._.js:1014
+[     634ms] Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <LoadingBoundary loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/pk/checko..." tree={[...]} cacheNode={{lazyData:null, ...}} segmentPath={[...]}>
+              <SegmentViewNode type="page" pagePath="/apps/stor...">
+                <SegmentTrieNode>
+                <Checkout>
+                  <div className="grid grid-...">
+                    <PaymentWrapper>
+                    <CheckoutSummary>
+                      <div className={"sticky t..."}>
+                        <div className="w-full bg-...">
+                          <div>
+                          <h2>
+                          <div>
+                          <CartTotals totals={{id:"cart_0...", ...}}>
+                            <div>
+                              <div className={"flex fle..."}>
+                                <div className="flex items...">
+                                  <span>
+                                  <span data-testid="cart-subtotal" data-value={1650}>
++                                   PKR 1,650
+-                                   PKR 1,650.00
+                                ...
+                              ...
+                          ...
+              ...
+            ...
+
+    at throwOnHydrationMismatch (http://localhost:8000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:2892:56)
+    at prepareToHydrateHostInstance (http://localhost:8000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:2946:23)
+    at completeWork (http://localhost:8000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:6330:60)
+    at runWithFiberInDEV (http://localhost:8000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:886:74)
+    at completeUnitOfWork (http://localhost:8000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:8363:23)
+    at performUnitOfWork (http://localhost:8000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:8300:28)
+    at workLoopConcurrentByScheduler (http://localhost:8000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:8294:58)
+    at renderRootConcurrent (http://localhost:8000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:8276:71)
+    at performWorkOnRoot (http://localhost:8000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:7908:176)
+    at performWorkOnRootViaSchedulerTask (http://localhost:8000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:8882:9)
+    at MessagePort.performWorkUntilDeadline (http://localhost:8000/_next/static/chunks/node_modules_next_dist_compiled_5150ccfd._.js:2601:64)

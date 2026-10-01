@@ -1,0 +1,105 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e139] [cursor=pointer]:
+    - button "Open Next.js Dev Tools" [ref=e140]:
+      - img [ref=e141]
+    - generic [ref=e144]:
+      - button "Open issues overlay" [ref=e145]:
+        - generic [ref=e146]:
+          - generic [ref=e147]: "0"
+          - generic [ref=e148]: "1"
+        - generic [ref=e149]: Issue
+      - button "Collapse issues badge" [ref=e150]:
+        - img [ref=e151]
+  - main [ref=e153]:
+    - generic [ref=e154]:
+      - navigation [ref=e156]:
+        - link "Back to shopping cart" [ref=e157] [cursor=pointer]:
+          - /url: /pk/cart
+          - img [ref=e158]
+          - generic [ref=e160]: Back to shopping cart
+        - link "Medusa Store" [ref=e161] [cursor=pointer]:
+          - /url: /pk
+      - generic [ref=e287]:
+        - generic [ref=e289]:
+          - generic [ref=e290]:
+            - generic [ref=e291]:
+              - heading "Shipping Address" [level=2] [ref=e292]:
+                - text: Shipping Address
+                - img [ref=e293]
+              - paragraph [ref=e296]:
+                - button "Edit" [ref=e297] [cursor=pointer]
+            - generic [ref=e301]:
+              - generic [ref=e302]:
+                - paragraph [ref=e303]: Shipping Address
+                - paragraph [ref=e304]: Ahmed Khan
+                - paragraph [ref=e305]: 12 Mall Road
+                - paragraph [ref=e306]: 54000, Lahore
+                - paragraph [ref=e307]: PK
+              - generic [ref=e308]:
+                - paragraph [ref=e309]: Contact
+                - paragraph [ref=e310]: "03001234567"
+                - paragraph [ref=e311]: ahmed.khan@example.com
+              - generic [ref=e312]:
+                - paragraph [ref=e313]: Billing Address
+                - paragraph [ref=e314]: Billing and delivery address are the same.
+          - generic [ref=e316]:
+            - heading "Delivery" [level=2] [ref=e318]
+            - generic [ref=e319]:
+              - generic [ref=e320]:
+                - generic [ref=e321]: Shipping method
+                - generic [ref=e322]: How would you like you order delivered
+              - radiogroup [ref=e325]:
+                - radio "Standard Delivery PKR 200" [ref=e326] [cursor=pointer]:
+                  - generic [ref=e327]:
+                    - radio [checked] [ref=e328]
+                    - generic [ref=e330]: Standard Delivery
+                  - generic [ref=e331]: PKR 200
+            - generic [ref=e332]:
+              - button "Continue to payment" [disabled]
+          - generic [ref=e335]:
+            - heading "Payment" [level=2]
+          - generic [ref=e338]:
+            - heading "Review" [level=2]
+        - generic [ref=e340]:
+          - heading "In your Cart" [level=2] [ref=e341]
+          - generic [ref=e343]:
+            - generic [ref=e344]:
+              - generic [ref=e345]:
+                - generic [ref=e346]: Subtotal (excl. shipping and taxes)
+                - generic [ref=e347]: PKR 1,650
+              - generic [ref=e348]:
+                - generic [ref=e349]: Shipping
+                - generic [ref=e350]: PKR 0
+              - generic [ref=e351]:
+                - generic [ref=e352]: Taxes
+                - generic [ref=e353]: PKR 0
+            - generic [ref=e355]:
+              - generic [ref=e356]: Total
+              - generic [ref=e357]: PKR 1,650
+          - table [ref=e360]:
+            - rowgroup [ref=e361]:
+              - 'row "Thumbnail Premium Desi Ghee Variant: 500ml 1x PKR 1,650 PKR 1,650" [ref=e362]':
+                - cell "Thumbnail" [ref=e363]:
+                  - link "Thumbnail" [ref=e364] [cursor=pointer]:
+                    - /url: /pk/products/desi-ghee
+                    - img "Thumbnail" [ref=e366]
+                - 'cell "Premium Desi Ghee Variant: 500ml" [ref=e367]':
+                  - paragraph [ref=e368]: Premium Desi Ghee
+                  - paragraph [ref=e369]: "Variant: 500ml"
+                - cell "1x PKR 1,650 PKR 1,650" [ref=e370]:
+                  - generic [ref=e371]:
+                    - generic [ref=e372]:
+                      - paragraph [ref=e373]: 1x
+                      - generic [ref=e375]: PKR 1,650
+                    - generic [ref=e377]: PKR 1,650
+          - button [ref=e383] [cursor=pointer]: Add Promotion Code(s)
+      - paragraph [ref=e279]:
+        - text: Powered by
+        - link [ref=e280] [cursor=pointer]:
+          - /url: https://www.medusajs.com
+          - img [ref=e281]
+        - text: "&"
+        - link [ref=e283] [cursor=pointer]:
+          - /url: https://nextjs.org
+          - img [ref=e284]
+  - alert [ref=e286]

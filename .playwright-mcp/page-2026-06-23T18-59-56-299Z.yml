@@ -1,0 +1,239 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e139] [cursor=pointer]:
+    - button "Open Next.js Dev Tools" [ref=e140]:
+      - img [ref=e141]
+    - generic [ref=e144]:
+      - button "Open issues overlay" [ref=e145]:
+        - generic [ref=e146]:
+          - generic [ref=e147]: "0"
+          - generic [ref=e148]: "1"
+        - generic [ref=e149]: Issue
+      - button "Collapse issues badge" [ref=e150]:
+        - img [ref=e151]
+  - main [ref=e153]:
+    - generic [ref=e439]:
+      - generic [ref=e441]:
+        - generic [ref=e442]:
+          - img [ref=e443]
+          - text: 100% Natural
+        - generic [ref=e446]:
+          - img [ref=e447]
+          - text: Honest Sourcing
+        - generic [ref=e450]:
+          - img [ref=e451]
+          - text: Premium Quality
+        - generic [ref=e454]:
+          - img [ref=e455]
+          - text: Sourced from Sahiwal
+        - generic [ref=e458]:
+          - img [ref=e459]
+          - text: Packed in Lahore
+        - generic [ref=e462]:
+          - img [ref=e463]
+          - text: Delivery All Over Pakistan
+      - navigation [ref=e469]:
+        - link "FITRAT ORIGINS" [ref=e471] [cursor=pointer]:
+          - /url: /pk
+          - generic [ref=e472]:
+            - img [ref=e474]
+            - generic [ref=e477]:
+              - generic [ref=e478]: FITRAT
+              - generic [ref=e479]: ORIGINS
+        - list [ref=e480]:
+          - listitem [ref=e481]:
+            - link "Home" [ref=e482] [cursor=pointer]:
+              - /url: /pk
+          - listitem [ref=e483]:
+            - link "Shop" [ref=e484] [cursor=pointer]:
+              - /url: /pk/store
+          - listitem [ref=e485]:
+            - link "Our Story" [ref=e486] [cursor=pointer]:
+              - /url: "#story"
+          - listitem [ref=e487]:
+            - link "Our Sourcing" [ref=e488] [cursor=pointer]:
+              - /url: "#story"
+          - listitem [ref=e489]:
+            - link "Blog" [ref=e490] [cursor=pointer]:
+              - /url: /pk/store
+          - listitem [ref=e491]:
+            - link "Contact" [ref=e492] [cursor=pointer]:
+              - /url: "#newsletter"
+        - generic [ref=e493]:
+          - link "Search" [ref=e494] [cursor=pointer]:
+            - /url: /pk/store
+            - img [ref=e495]
+          - link "Account" [ref=e498] [cursor=pointer]:
+            - /url: /pk/account
+            - img [ref=e499]
+          - button "Cart (0)" [ref=e504] [cursor=pointer]:
+            - link "Cart (0)" [ref=e505]:
+              - /url: /pk/cart
+    - generic [ref=e508]:
+      - heading "Thank you! Your order was placed successfully." [level=1] [ref=e509]:
+        - generic [ref=e510]: Thank you!
+        - generic [ref=e511]: Your order was placed successfully.
+      - generic [ref=e512]:
+        - paragraph [ref=e513]: We have sent the order confirmation details to ahmed.khan@example.com.
+        - paragraph [ref=e514]: "Order date: Tue Jun 23 2026"
+        - paragraph [ref=e515]: "Order number: 3"
+      - heading "Summary" [level=2] [ref=e516]
+      - table [ref=e519]:
+        - rowgroup [ref=e520]:
+          - 'row "Thumbnail Premium Desi Ghee Variant: 500ml 1x PKR 1,650.00 PKR 1,650.00" [ref=e521]':
+            - cell "Thumbnail" [ref=e522]:
+              - img "Thumbnail" [ref=e525]
+            - 'cell "Premium Desi Ghee Variant: 500ml" [ref=e526]':
+              - paragraph [ref=e527]: Premium Desi Ghee
+              - paragraph [ref=e528]: "Variant: 500ml"
+            - cell "1x PKR 1,650.00 PKR 1,650.00" [ref=e529]:
+              - generic [ref=e530]:
+                - generic [ref=e531]:
+                  - paragraph [ref=e532]: 1x
+                  - generic [ref=e534]: PKR 1,650.00
+                - generic [ref=e536]: PKR 1,650.00
+      - generic [ref=e537]:
+        - generic [ref=e538]:
+          - generic [ref=e539]:
+            - generic [ref=e540]: Subtotal (excl. shipping and taxes)
+            - generic [ref=e541]: PKR 1,650
+          - generic [ref=e542]:
+            - generic [ref=e543]: Shipping
+            - generic [ref=e544]: PKR 200
+          - generic [ref=e545]:
+            - generic [ref=e546]: Taxes
+            - generic [ref=e547]: PKR 0
+        - generic [ref=e549]:
+          - generic [ref=e550]: Total
+          - generic [ref=e551]: PKR 1,850
+      - generic [ref=e553]:
+        - heading "Delivery" [level=2] [ref=e554]
+        - generic [ref=e555]:
+          - generic [ref=e556]:
+            - paragraph [ref=e557]: Shipping Address
+            - paragraph [ref=e558]: Ahmed Khan
+            - paragraph [ref=e559]: 12 Mall Road
+            - paragraph [ref=e560]: 54000, Lahore
+            - paragraph [ref=e561]: PK
+          - generic [ref=e562]:
+            - paragraph [ref=e563]: Contact
+            - paragraph [ref=e564]: "03001234567"
+            - paragraph [ref=e565]: ahmed.khan@example.com
+          - generic [ref=e566]:
+            - paragraph [ref=e567]: Method
+            - paragraph [ref=e568]: Standard Delivery (PKR 200.00)
+      - generic [ref=e570]:
+        - heading "Payment" [level=2] [ref=e571]
+        - generic [ref=e573]:
+          - generic [ref=e574]:
+            - paragraph [ref=e575]: Payment method
+            - paragraph [ref=e576]: Cash on Delivery
+          - generic [ref=e577]:
+            - paragraph [ref=e578]: Payment details
+            - generic [ref=e579]:
+              - img [ref=e581]
+              - paragraph [ref=e584]: PKR 1,850.00 paid at 6/23/2026, 11:59:55 PM
+      - generic [ref=e586]:
+        - heading "Need help?" [level=2] [ref=e587]
+        - list [ref=e589]:
+          - listitem [ref=e590]:
+            - link "Contact" [ref=e591] [cursor=pointer]:
+              - /url: /pk/contact
+          - listitem [ref=e592]:
+            - link "Returns & Exchanges" [ref=e593] [cursor=pointer]:
+              - /url: /pk/contact
+    - generic [ref=e594]:
+      - generic [ref=e596]:
+        - generic [ref=e597]:
+          - link "FITRAT ORIGINS" [ref=e598] [cursor=pointer]:
+            - /url: /pk
+            - generic [ref=e599]:
+              - img [ref=e601]
+              - generic [ref=e604]:
+                - generic [ref=e605]: FITRAT
+                - generic [ref=e606]: ORIGINS
+          - paragraph [ref=e607]: Pure foods. Honest origins. Premium natural products crafted with care and sourced from the heart of Sahiwal, Pakistan.
+          - generic [ref=e608]:
+            - link "Social link" [ref=e609] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e610]
+            - link "Social link" [ref=e612] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e613]
+            - link "Social link" [ref=e616] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e617]
+        - generic [ref=e620]:
+          - heading "Shop" [level=3] [ref=e621]
+          - list [ref=e622]:
+            - listitem [ref=e623]:
+              - link "Desi Ghee" [ref=e624] [cursor=pointer]:
+                - /url: /pk/store
+            - listitem [ref=e625]:
+              - link "Honey" [ref=e626] [cursor=pointer]:
+                - /url: /pk/store
+            - listitem [ref=e627]:
+              - link "Butter" [ref=e628] [cursor=pointer]:
+                - /url: /pk/store
+            - listitem [ref=e629]:
+              - link "Mustard Oil" [ref=e630] [cursor=pointer]:
+                - /url: /pk/store
+            - listitem [ref=e631]:
+              - link "Olive Oil" [ref=e632] [cursor=pointer]:
+                - /url: /pk/store
+            - listitem [ref=e633]:
+              - link "All Products" [ref=e634] [cursor=pointer]:
+                - /url: /pk/store
+        - generic [ref=e635]:
+          - heading "Company" [level=3] [ref=e636]
+          - list [ref=e637]:
+            - listitem [ref=e638]:
+              - link "Our Story" [ref=e639] [cursor=pointer]:
+                - /url: /pk/store
+            - listitem [ref=e640]:
+              - link "Our Sourcing" [ref=e641] [cursor=pointer]:
+                - /url: /pk/store
+            - listitem [ref=e642]:
+              - link "Blog" [ref=e643] [cursor=pointer]:
+                - /url: /pk/store
+            - listitem [ref=e644]:
+              - link "Contact Us" [ref=e645] [cursor=pointer]:
+                - /url: /pk/store
+        - generic [ref=e646]:
+          - heading "Customer Care" [level=3] [ref=e647]
+          - list [ref=e648]:
+            - listitem [ref=e649]:
+              - link "Track Order" [ref=e650] [cursor=pointer]:
+                - /url: /pk/store
+            - listitem [ref=e651]:
+              - link "Shipping & Delivery" [ref=e652] [cursor=pointer]:
+                - /url: /pk/store
+            - listitem [ref=e653]:
+              - link "Returns & Refunds" [ref=e654] [cursor=pointer]:
+                - /url: /pk/store
+            - listitem [ref=e655]:
+              - link "FAQs" [ref=e656] [cursor=pointer]:
+                - /url: /pk/store
+        - generic [ref=e657]:
+          - heading "Stay Connected" [level=3] [ref=e658]
+          - paragraph [ref=e659]: Subscribe for updates and exclusive offers.
+          - generic [ref=e660]:
+            - textbox "Email address" [ref=e661]:
+              - /placeholder: Enter your email
+            - button "Subscribe" [ref=e662] [cursor=pointer]:
+              - img [ref=e663]
+      - generic [ref=e666]:
+        - paragraph [ref=e667]: © 2024 Fitrat Origins. All Rights Reserved.
+        - generic [ref=e668]:
+          - generic [ref=e669]:
+            - img [ref=e670]
+            - text: Secure Payments
+          - generic [ref=e673]:
+            - img [ref=e674]
+            - text: Cash on Delivery
+          - generic [ref=e677]:
+            - img [ref=e678]
+            - text: Nationwide Delivery
+          - generic [ref=e683]:
+            - img [ref=e684]
+            - text: Made in Pakistan
+  - alert [ref=e286]: Order Confirmed

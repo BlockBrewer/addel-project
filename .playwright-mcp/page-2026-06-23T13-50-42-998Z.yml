@@ -1,0 +1,445 @@
+- main [ref=e2]:
+  - generic [ref=e3]:
+    - paragraph [ref=e5]: Pure Foods · Honest Origins · Delivery Across Pakistan
+    - navigation [ref=e7]:
+      - generic [ref=e8]:
+        - button "Menu" [ref=e14] [cursor=pointer]
+        - link "FITRAT ORIGINS" [ref=e15] [cursor=pointer]:
+          - /url: /pk
+          - generic [ref=e16]:
+            - img [ref=e18]
+            - generic [ref=e21]:
+              - generic [ref=e22]: FITRAT
+              - generic [ref=e23]: ORIGINS
+      - generic [ref=e24]:
+        - link "Search" [ref=e25] [cursor=pointer]:
+          - /url: /pk/store
+          - img [ref=e26]
+        - link "Account" [ref=e29] [cursor=pointer]:
+          - /url: /pk/account
+          - img [ref=e30]
+        - button "Cart (0)" [ref=e35] [cursor=pointer]:
+          - link "Cart (0)" [ref=e36]:
+            - /url: /pk/cart
+  - generic [ref=e37]:
+    - img "Fitrat Origins pure raw honey in the green pastures of Sahiwal" [ref=e38]
+    - generic [ref=e40]:
+      - heading "Pure Foods. Honest Origins." [level=1] [ref=e41]:
+        - generic [ref=e42]: Pure Foods.
+        - generic [ref=e43]: Honest Origins.
+      - generic [ref=e44]:
+        - link "Shop Premium Collection" [ref=e45] [cursor=pointer]:
+          - /url: /pk/store
+          - text: Shop Premium Collection
+          - img [ref=e46]
+        - list [ref=e48]:
+          - listitem [ref=e49]:
+            - img [ref=e50]
+            - generic [ref=e53]:
+              - generic [ref=e54]: 100% Natural
+              - generic [ref=e55]: No Additives
+          - listitem [ref=e56]:
+            - img [ref=e57]
+            - generic [ref=e60]:
+              - generic [ref=e61]: Trusted by
+              - generic [ref=e62]: Families
+          - listitem [ref=e63]:
+            - img [ref=e64]
+            - generic [ref=e67]:
+              - generic [ref=e68]: Export Quality
+              - generic [ref=e69]: Standards
+          - listitem [ref=e70]:
+            - img [ref=e71]
+            - generic [ref=e74]:
+              - generic [ref=e75]: Secure & Fast
+              - generic [ref=e76]: Delivery
+  - list [ref=e79]:
+    - listitem [ref=e80]:
+      - img [ref=e82]
+      - generic [ref=e85]:
+        - paragraph [ref=e86]: 100% Natural
+        - paragraph [ref=e87]: No preservatives or artificial additives
+    - listitem [ref=e88]:
+      - img [ref=e90]
+      - generic [ref=e93]:
+        - paragraph [ref=e94]: Honest Sourcing
+        - paragraph [ref=e95]: Sourced from trusted farms in Sahiwal
+    - listitem [ref=e96]:
+      - img [ref=e98]
+      - generic [ref=e101]:
+        - paragraph [ref=e102]: Premium Quality
+        - paragraph [ref=e103]: Carefully crafted for purity & taste
+    - listitem [ref=e104]:
+      - img [ref=e106]
+      - generic [ref=e109]:
+        - paragraph [ref=e110]: Freshly Packed
+        - paragraph [ref=e111]: Hygienically packed in Lahore
+  - generic [ref=e113]:
+    - generic [ref=e114]:
+      - generic [ref=e115]:
+        - paragraph [ref=e116]: Our Best Sellers
+        - heading "Featured Products" [level=2] [ref=e117]
+      - link "View All Products" [ref=e118] [cursor=pointer]:
+        - /url: /pk/store
+        - text: View All Products
+        - img [ref=e119]
+    - list [ref=e121]:
+      - listitem [ref=e122]:
+        - article [ref=e123]:
+          - link "Premium Desi Ghee" [ref=e124] [cursor=pointer]:
+            - /url: /pk/store
+            - img "Premium Desi Ghee" [ref=e125]
+          - generic [ref=e126]:
+            - heading "Premium Desi Ghee" [level=3] [ref=e127]
+            - paragraph [ref=e128]: Traditionally crafted Bilona ghee from Sahiwal milk.
+            - generic [ref=e129]:
+              - generic [ref=e130]:
+                - img [ref=e131]
+                - img [ref=e133]
+                - img [ref=e135]
+                - img [ref=e137]
+                - img [ref=e139]
+              - generic [ref=e141]: (120)
+            - paragraph [ref=e142]: Rs. 1,650
+            - link "Shop Now" [ref=e143] [cursor=pointer]:
+              - /url: /pk/store
+      - listitem [ref=e144]:
+        - article [ref=e145]:
+          - link "Pure Natural Honey" [ref=e146] [cursor=pointer]:
+            - /url: /pk/store
+            - img "Pure Natural Honey" [ref=e147]
+          - generic [ref=e148]:
+            - heading "Pure Natural Honey" [level=3] [ref=e149]
+            - paragraph [ref=e150]: Raw, unprocessed honey from the best beekeepers.
+            - generic [ref=e151]:
+              - generic [ref=e152]:
+                - img [ref=e153]
+                - img [ref=e155]
+                - img [ref=e157]
+                - img [ref=e159]
+                - img [ref=e161]
+              - generic [ref=e163]: (98)
+            - paragraph [ref=e164]: Rs. 950
+            - link "Shop Now" [ref=e165] [cursor=pointer]:
+              - /url: /pk/store
+      - listitem [ref=e166]:
+        - article [ref=e167]:
+          - link "Natural Butter" [ref=e168] [cursor=pointer]:
+            - /url: /pk/store
+            - img "Natural Butter" [ref=e169]
+          - generic [ref=e170]:
+            - heading "Natural Butter" [level=3] [ref=e171]
+            - paragraph [ref=e172]: Rich, creamy & wholesome butter made from pure milk.
+            - generic [ref=e173]:
+              - generic [ref=e174]:
+                - img [ref=e175]
+                - img [ref=e177]
+                - img [ref=e179]
+                - img [ref=e181]
+                - img [ref=e183]
+              - generic [ref=e185]: (75)
+            - paragraph [ref=e186]: Rs. 650
+            - link "Shop Now" [ref=e187] [cursor=pointer]:
+              - /url: /pk/store
+      - listitem [ref=e188]:
+        - article [ref=e189]:
+          - link "Cold Pressed Mustard Oil" [ref=e190] [cursor=pointer]:
+            - /url: /pk/store
+            - img "Cold Pressed Mustard Oil" [ref=e191]
+          - generic [ref=e192]:
+            - heading "Cold Pressed Mustard Oil" [level=3] [ref=e193]
+            - paragraph [ref=e194]: 100% pure mustard oil extracted the natural way.
+            - generic [ref=e195]:
+              - generic [ref=e196]:
+                - img [ref=e197]
+                - img [ref=e199]
+                - img [ref=e201]
+                - img [ref=e203]
+                - img [ref=e205]
+              - generic [ref=e207]: (75)
+            - paragraph [ref=e208]: Rs. 750
+            - link "Shop Now" [ref=e209] [cursor=pointer]:
+              - /url: /pk/store
+      - listitem [ref=e210]:
+        - article [ref=e211]:
+          - link "Extra Virgin Olive Oil" [ref=e212] [cursor=pointer]:
+            - /url: /pk/store
+            - img "Extra Virgin Olive Oil" [ref=e213]
+          - generic [ref=e214]:
+            - heading "Extra Virgin Olive Oil" [level=3] [ref=e215]
+            - paragraph [ref=e216]: Cold extracted for authentic taste & maximum nutrition.
+            - generic [ref=e217]:
+              - generic [ref=e218]:
+                - img [ref=e219]
+                - img [ref=e221]
+                - img [ref=e223]
+                - img [ref=e225]
+                - img [ref=e227]
+              - generic [ref=e229]: (58)
+            - paragraph [ref=e230]: Rs. 1,450
+            - link "Shop Now" [ref=e231] [cursor=pointer]:
+              - /url: /pk/store
+  - generic [ref=e233]:
+    - generic [ref=e234]:
+      - paragraph [ref=e235]: Pure Oils Collection
+      - heading "Purity in Every Drop of Oil." [level=2] [ref=e236]:
+        - text: Purity in Every
+        - text: Drop of Oil.
+      - paragraph [ref=e237]: Our oils are cold pressed to preserve natural nutrients, aroma and authentic taste.
+      - link "Explore Oils" [ref=e238] [cursor=pointer]:
+        - /url: /pk/store
+        - text: Explore Oils
+        - img [ref=e239]
+    - generic [ref=e241]:
+      - article [ref=e242]:
+        - img "Mustard Oil" [ref=e243]
+        - generic [ref=e244]:
+          - heading "Cold Pressed Mustard Oil" [level=3] [ref=e245]:
+            - text: Cold Pressed
+            - text: Mustard Oil
+          - list [ref=e246]:
+            - listitem [ref=e247]:
+              - img [ref=e248]
+              - text: 100% Pure & Natural
+            - listitem [ref=e250]:
+              - img [ref=e251]
+              - text: Rich in Omega 3 & 6
+            - listitem [ref=e253]:
+              - img [ref=e254]
+              - text: Great for Heart Health
+          - link "Shop Mustard Oil" [ref=e256] [cursor=pointer]:
+            - /url: /pk/store
+            - text: Shop Mustard Oil
+            - img [ref=e257]
+      - article [ref=e259]:
+        - img "Olive Oil" [ref=e260]
+        - generic [ref=e261]:
+          - heading "Extra Virgin Olive Oil" [level=3] [ref=e262]:
+            - text: Extra Virgin
+            - text: Olive Oil
+          - list [ref=e263]:
+            - listitem [ref=e264]:
+              - img [ref=e265]
+              - text: First Cold Pressed
+            - listitem [ref=e267]:
+              - img [ref=e268]
+              - text: High in Antioxidants
+            - listitem [ref=e270]:
+              - img [ref=e271]
+              - text: Imported Quality
+          - link "Shop Olive Oil" [ref=e273] [cursor=pointer]:
+            - /url: /pk/store
+            - text: Shop Olive Oil
+            - img [ref=e274]
+  - generic [ref=e277]:
+    - generic [ref=e278]:
+      - generic [ref=e279]:
+        - paragraph [ref=e280]: Our Story
+        - heading "Rooted in Nature. Guided by Purpose." [level=2] [ref=e281]:
+          - text: Rooted in Nature.
+          - text: Guided by Purpose.
+        - paragraph [ref=e282]: At Fitrat Origins, we believe real food comes from honest origins. From the green pastures of Sahiwal to our careful processes in Lahore, every step is taken with integrity and respect for nature.
+        - link "Learn Our Story" [ref=e283] [cursor=pointer]:
+          - /url: /pk/store
+          - text: Learn Our Story
+          - img [ref=e284]
+      - img "The Fitrat Origins range — desi ghee, honey, mustard oil and olive oil" [ref=e286]
+    - generic [ref=e287]:
+      - generic [ref=e288]:
+        - img [ref=e290]
+        - paragraph [ref=e295]: 10,000+
+        - paragraph [ref=e296]: Happy Families
+      - generic [ref=e297]:
+        - img [ref=e299]
+        - paragraph [ref=e302]: 50+
+        - paragraph [ref=e303]: Trusted Farms
+      - generic [ref=e304]:
+        - img [ref=e306]
+        - paragraph [ref=e309]: 25+
+        - paragraph [ref=e310]: Premium Products
+      - generic [ref=e311]:
+        - img [ref=e313]
+        - paragraph [ref=e316]: 100%
+        - paragraph [ref=e317]: Natural & Pure
+  - generic [ref=e319]:
+    - paragraph [ref=e320]: Certified Natural. Made For Your Family.
+    - list [ref=e321]:
+      - listitem [ref=e322]:
+        - img [ref=e324]
+        - generic [ref=e327]:
+          - paragraph [ref=e328]: 100% Natural
+          - paragraph [ref=e329]: No Additives
+      - listitem [ref=e330]:
+        - img [ref=e332]
+        - generic [ref=e335]:
+          - paragraph [ref=e336]: Food Safety
+          - paragraph [ref=e337]: Certified
+      - listitem [ref=e338]:
+        - img [ref=e340]
+        - generic [ref=e343]:
+          - paragraph [ref=e344]: Export Quality
+          - paragraph [ref=e345]: Standards
+      - listitem [ref=e346]:
+        - img [ref=e348]
+        - generic [ref=e351]:
+          - paragraph [ref=e352]: Halal Certified
+          - paragraph [ref=e353]: 100% Halal
+      - listitem [ref=e354]:
+        - img [ref=e356]
+        - generic [ref=e359]:
+          - paragraph [ref=e360]: Hygienically Packed
+          - paragraph [ref=e361]: For Your Safety
+  - generic [ref=e363]:
+    - generic [ref=e364]:
+      - paragraph [ref=e365]: What Our Customers Say
+      - heading "Trusted by Thousands" [level=2] [ref=e366]
+      - generic [ref=e367]:
+        - generic [ref=e368]:
+          - img [ref=e369]
+          - img [ref=e371]
+          - img [ref=e373]
+          - img [ref=e375]
+          - img [ref=e377]
+        - generic [ref=e379]: 4.9/5
+        - generic [ref=e380]: (2,500+ Reviews)
+    - list [ref=e381]:
+      - listitem [ref=e382]:
+        - generic [ref=e384]:
+          - img [ref=e385]
+          - img [ref=e387]
+          - img [ref=e389]
+          - img [ref=e391]
+          - img [ref=e393]
+        - paragraph [ref=e395]: “The desi ghee is absolutely pure and has an amazing aroma. You can taste the difference in every bite.”
+        - generic [ref=e396]:
+          - paragraph [ref=e397]: Ayesha Khan
+          - paragraph [ref=e398]: Lahore
+      - listitem [ref=e399]:
+        - generic [ref=e401]:
+          - img [ref=e402]
+          - img [ref=e404]
+          - img [ref=e406]
+          - img [ref=e408]
+          - img [ref=e410]
+        - paragraph [ref=e412]: “Fitrat Origins honey is our family favorite. Truly raw and natural — you feel the goodness in it.”
+        - generic [ref=e413]:
+          - paragraph [ref=e414]: Bilal Ahmed
+          - paragraph [ref=e415]: Karachi
+      - listitem [ref=e416]:
+        - generic [ref=e418]:
+          - img [ref=e419]
+          - img [ref=e421]
+          - img [ref=e423]
+          - img [ref=e425]
+          - img [ref=e427]
+        - paragraph [ref=e429]: “Excellent quality oils! The mustard oil adds a rich flavor to our food. Highly recommended.”
+        - generic [ref=e430]:
+          - paragraph [ref=e431]: Sana Mehmood
+          - paragraph [ref=e432]: Islamabad
+  - generic [ref=e434]:
+    - generic [ref=e436]:
+      - paragraph [ref=e437]: Stay Connected
+      - heading "Get the Goodness Delivered to You." [level=2] [ref=e438]
+    - generic [ref=e439]:
+      - paragraph [ref=e440]: Subscribe to get updates on new products, offers and healthy living tips.
+      - generic [ref=e441]:
+        - textbox "Email address" [ref=e442]:
+          - /placeholder: Enter your email
+        - button "Subscribe" [ref=e443] [cursor=pointer]:
+          - text: Subscribe
+          - img [ref=e444]
+  - generic [ref=e446]:
+    - generic [ref=e448]:
+      - generic [ref=e449]:
+        - link "FITRAT ORIGINS" [ref=e450] [cursor=pointer]:
+          - /url: /pk
+          - generic [ref=e451]:
+            - img [ref=e453]
+            - generic [ref=e456]:
+              - generic [ref=e457]: FITRAT
+              - generic [ref=e458]: ORIGINS
+        - paragraph [ref=e459]: Pure foods. Honest origins. Premium natural products crafted with care and sourced from the heart of Sahiwal, Pakistan.
+        - generic [ref=e460]:
+          - link "Social link" [ref=e461] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e462]
+          - link "Social link" [ref=e464] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e465]
+          - link "Social link" [ref=e468] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e469]
+      - generic [ref=e472]:
+        - heading "Shop" [level=3] [ref=e473]
+        - list [ref=e474]:
+          - listitem [ref=e475]:
+            - link "Desi Ghee" [ref=e476] [cursor=pointer]:
+              - /url: /pk/store
+          - listitem [ref=e477]:
+            - link "Honey" [ref=e478] [cursor=pointer]:
+              - /url: /pk/store
+          - listitem [ref=e479]:
+            - link "Butter" [ref=e480] [cursor=pointer]:
+              - /url: /pk/store
+          - listitem [ref=e481]:
+            - link "Mustard Oil" [ref=e482] [cursor=pointer]:
+              - /url: /pk/store
+          - listitem [ref=e483]:
+            - link "Olive Oil" [ref=e484] [cursor=pointer]:
+              - /url: /pk/store
+          - listitem [ref=e485]:
+            - link "All Products" [ref=e486] [cursor=pointer]:
+              - /url: /pk/store
+      - generic [ref=e487]:
+        - heading "Company" [level=3] [ref=e488]
+        - list [ref=e489]:
+          - listitem [ref=e490]:
+            - link "Our Story" [ref=e491] [cursor=pointer]:
+              - /url: /pk/store
+          - listitem [ref=e492]:
+            - link "Our Sourcing" [ref=e493] [cursor=pointer]:
+              - /url: /pk/store
+          - listitem [ref=e494]:
+            - link "Blog" [ref=e495] [cursor=pointer]:
+              - /url: /pk/store
+          - listitem [ref=e496]:
+            - link "Contact Us" [ref=e497] [cursor=pointer]:
+              - /url: /pk/store
+      - generic [ref=e498]:
+        - heading "Customer Care" [level=3] [ref=e499]
+        - list [ref=e500]:
+          - listitem [ref=e501]:
+            - link "Track Order" [ref=e502] [cursor=pointer]:
+              - /url: /pk/store
+          - listitem [ref=e503]:
+            - link "Shipping & Delivery" [ref=e504] [cursor=pointer]:
+              - /url: /pk/store
+          - listitem [ref=e505]:
+            - link "Returns & Refunds" [ref=e506] [cursor=pointer]:
+              - /url: /pk/store
+          - listitem [ref=e507]:
+            - link "FAQs" [ref=e508] [cursor=pointer]:
+              - /url: /pk/store
+      - generic [ref=e509]:
+        - heading "Stay Connected" [level=3] [ref=e510]
+        - paragraph [ref=e511]: Subscribe for updates and exclusive offers.
+        - generic [ref=e512]:
+          - textbox "Email address" [ref=e513]:
+            - /placeholder: Enter your email
+          - button "Subscribe" [ref=e514] [cursor=pointer]:
+            - img [ref=e515]
+    - generic [ref=e518]:
+      - paragraph [ref=e519]: © 2024 Fitrat Origins. All Rights Reserved.
+      - generic [ref=e520]:
+        - generic [ref=e521]:
+          - img [ref=e522]
+          - text: Secure Payments
+        - generic [ref=e525]:
+          - img [ref=e526]
+          - text: Cash on Delivery
+        - generic [ref=e529]:
+          - img [ref=e530]
+          - text: Nationwide Delivery
+        - generic [ref=e535]:
+          - img [ref=e536]
+          - text: Made in Pakistan

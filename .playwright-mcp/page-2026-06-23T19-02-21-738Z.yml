@@ -1,0 +1,247 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - img [ref=e7]
+          - text: 100% Natural
+        - generic [ref=e10]:
+          - img [ref=e11]
+          - text: Honest Sourcing
+        - generic [ref=e14]:
+          - img [ref=e15]
+          - text: Premium Quality
+        - generic [ref=e18]:
+          - img [ref=e19]
+          - text: Sourced from Sahiwal
+        - generic [ref=e22]:
+          - img [ref=e23]
+          - text: Packed in Lahore
+        - generic [ref=e26]:
+          - img [ref=e27]
+          - text: Delivery All Over Pakistan
+      - navigation [ref=e33]:
+        - link "FITRAT ORIGINS" [ref=e35] [cursor=pointer]:
+          - /url: /pk
+          - generic [ref=e36]:
+            - img [ref=e38]
+            - generic [ref=e41]:
+              - generic [ref=e42]: FITRAT
+              - generic [ref=e43]: ORIGINS
+        - list [ref=e44]:
+          - listitem [ref=e45]:
+            - link "Home" [ref=e46] [cursor=pointer]:
+              - /url: /pk
+          - listitem [ref=e47]:
+            - link "Shop" [ref=e48] [cursor=pointer]:
+              - /url: /pk/store
+          - listitem [ref=e49]:
+            - link "Our Story" [ref=e50] [cursor=pointer]:
+              - /url: "#story"
+          - listitem [ref=e51]:
+            - link "Our Sourcing" [ref=e52] [cursor=pointer]:
+              - /url: "#story"
+          - listitem [ref=e53]:
+            - link "Blog" [ref=e54] [cursor=pointer]:
+              - /url: /pk/store
+          - listitem [ref=e55]:
+            - link "Contact" [ref=e56] [cursor=pointer]:
+              - /url: "#newsletter"
+        - generic [ref=e57]:
+          - link "Search" [ref=e58] [cursor=pointer]:
+            - /url: /pk/store
+            - img [ref=e59]
+          - link "Account" [ref=e62] [cursor=pointer]:
+            - /url: /pk/account
+            - img [ref=e63]
+          - generic [ref=e67]:
+            - button "Cart (1)" [ref=e227] [cursor=pointer]:
+              - link "Cart (1)" [ref=e228]:
+                - /url: /pk/cart
+            - generic [ref=e229]:
+              - heading "Cart" [level=3] [ref=e231]
+              - generic [ref=e233]:
+                - link "Thumbnail" [ref=e234] [cursor=pointer]:
+                  - /url: /pk/products/desi-ghee
+                  - img "Thumbnail" [ref=e236]
+                - generic [ref=e237]:
+                  - generic [ref=e239]:
+                    - generic [ref=e240]:
+                      - heading "Premium Desi Ghee" [level=3] [ref=e241]:
+                        - link "Premium Desi Ghee" [ref=e242] [cursor=pointer]:
+                          - /url: /pk/products/desi-ghee
+                      - paragraph [ref=e243]: "Variant: 500ml"
+                      - generic [ref=e244]: "Quantity: 1"
+                    - generic [ref=e247]: PKR 1,650
+                  - button "Remove" [ref=e249] [cursor=pointer]:
+                    - img [ref=e250]
+                    - generic [ref=e252]: Remove
+              - generic [ref=e253]:
+                - generic [ref=e254]:
+                  - generic [ref=e255]: Subtotal (excl. taxes)
+                  - generic [ref=e256]: PKR 1,650
+                - link "Go to cart" [ref=e257] [cursor=pointer]:
+                  - /url: /pk/cart
+                  - button "Go to cart" [ref=e258]
+    - generic [ref=e70]:
+      - generic [ref=e71]:
+        - generic [ref=e73]:
+          - heading "Premium Desi Ghee" [level=2] [ref=e74]
+          - paragraph [ref=e75]: Rich, aromatic, and traditionally prepared to bring authentic flavour and wholesome goodness to your meals. Made from grass-fed cow milk using the time-honoured Bilona method.
+        - generic [ref=e77]:
+          - heading "Product Information" [level=3] [ref=e79]:
+            - generic [ref=e81]:
+              - paragraph [ref=e83]: Product Information
+              - button [ref=e84] [cursor=pointer]
+          - heading "Shipping & Returns" [level=3] [ref=e90]:
+            - generic [ref=e92]:
+              - paragraph [ref=e94]: Shipping & Returns
+              - button [ref=e95] [cursor=pointer]
+      - img "Product image 1" [ref=e104]
+      - generic [ref=e259]:
+        - generic [ref=e261]: PKR 1,650
+        - button "Add to cart" [ref=e262] [cursor=pointer]
+    - generic [ref=e263]:
+      - generic [ref=e264]:
+        - generic [ref=e265]: Related products
+        - paragraph [ref=e266]: You might also want to check out these products.
+      - list [ref=e267]:
+        - listitem [ref=e268]:
+          - link "Thumbnail Cold Pressed Mustard Oil PKR 750.00" [ref=e269] [cursor=pointer]:
+            - /url: /pk/products/mustard-oil
+            - generic [ref=e270]:
+              - img "Thumbnail" [ref=e272]
+              - generic [ref=e273]:
+                - paragraph [ref=e274]: Cold Pressed Mustard Oil
+                - paragraph [ref=e276]: PKR 750.00
+        - listitem [ref=e277]:
+          - link "Thumbnail Pure Natural Honey PKR 950.00" [ref=e278] [cursor=pointer]:
+            - /url: /pk/products/pure-honey
+            - generic [ref=e279]:
+              - img "Thumbnail" [ref=e281]
+              - generic [ref=e282]:
+                - paragraph [ref=e283]: Pure Natural Honey
+                - paragraph [ref=e285]: PKR 950.00
+        - listitem [ref=e286]:
+          - link "Thumbnail Natural Butter PKR 650.00" [ref=e287] [cursor=pointer]:
+            - /url: /pk/products/natural-butter
+            - generic [ref=e288]:
+              - img "Thumbnail" [ref=e290]
+              - generic [ref=e291]:
+                - paragraph [ref=e292]: Natural Butter
+                - paragraph [ref=e294]: PKR 650.00
+        - listitem [ref=e295]:
+          - link "Thumbnail Extra Virgin Olive Oil PKR 1,450.00" [ref=e296] [cursor=pointer]:
+            - /url: /pk/products/olive-oil
+            - generic [ref=e297]:
+              - img "Thumbnail" [ref=e299]
+              - generic [ref=e300]:
+                - paragraph [ref=e301]: Extra Virgin Olive Oil
+                - paragraph [ref=e303]: PKR 1,450.00
+    - generic [ref=e135]:
+      - generic [ref=e137]:
+        - generic [ref=e138]:
+          - link "FITRAT ORIGINS" [ref=e139] [cursor=pointer]:
+            - /url: /pk
+            - generic [ref=e140]:
+              - img [ref=e142]
+              - generic [ref=e145]:
+                - generic [ref=e146]: FITRAT
+                - generic [ref=e147]: ORIGINS
+          - paragraph [ref=e148]: Pure foods. Honest origins. Premium natural products crafted with care and sourced from the heart of Sahiwal, Pakistan.
+          - generic [ref=e149]:
+            - link "Social link" [ref=e150] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e151]
+            - link "Social link" [ref=e153] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e154]
+            - link "Social link" [ref=e157] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e158]
+        - generic [ref=e161]:
+          - heading "Shop" [level=3] [ref=e162]
+          - list [ref=e163]:
+            - listitem [ref=e164]:
+              - link "Desi Ghee" [ref=e165] [cursor=pointer]:
+                - /url: /pk/store
+            - listitem [ref=e166]:
+              - link "Honey" [ref=e167] [cursor=pointer]:
+                - /url: /pk/store
+            - listitem [ref=e168]:
+              - link "Butter" [ref=e169] [cursor=pointer]:
+                - /url: /pk/store
+            - listitem [ref=e170]:
+              - link "Mustard Oil" [ref=e171] [cursor=pointer]:
+                - /url: /pk/store
+            - listitem [ref=e172]:
+              - link "Olive Oil" [ref=e173] [cursor=pointer]:
+                - /url: /pk/store
+            - listitem [ref=e174]:
+              - link "All Products" [ref=e175] [cursor=pointer]:
+                - /url: /pk/store
+        - generic [ref=e176]:
+          - heading "Company" [level=3] [ref=e177]
+          - list [ref=e178]:
+            - listitem [ref=e179]:
+              - link "Our Story" [ref=e180] [cursor=pointer]:
+                - /url: /pk/store
+            - listitem [ref=e181]:
+              - link "Our Sourcing" [ref=e182] [cursor=pointer]:
+                - /url: /pk/store
+            - listitem [ref=e183]:
+              - link "Blog" [ref=e184] [cursor=pointer]:
+                - /url: /pk/store
+            - listitem [ref=e185]:
+              - link "Contact Us" [ref=e186] [cursor=pointer]:
+                - /url: /pk/store
+        - generic [ref=e187]:
+          - heading "Customer Care" [level=3] [ref=e188]
+          - list [ref=e189]:
+            - listitem [ref=e190]:
+              - link "Track Order" [ref=e191] [cursor=pointer]:
+                - /url: /pk/store
+            - listitem [ref=e192]:
+              - link "Shipping & Delivery" [ref=e193] [cursor=pointer]:
+                - /url: /pk/store
+            - listitem [ref=e194]:
+              - link "Returns & Refunds" [ref=e195] [cursor=pointer]:
+                - /url: /pk/store
+            - listitem [ref=e196]:
+              - link "FAQs" [ref=e197] [cursor=pointer]:
+                - /url: /pk/store
+        - generic [ref=e198]:
+          - heading "Stay Connected" [level=3] [ref=e199]
+          - paragraph [ref=e200]: Subscribe for updates and exclusive offers.
+          - generic [ref=e201]:
+            - textbox "Email address" [ref=e202]:
+              - /placeholder: Enter your email
+            - button "Subscribe" [ref=e203] [cursor=pointer]:
+              - img [ref=e204]
+      - generic [ref=e207]:
+        - paragraph [ref=e208]: © 2024 Fitrat Origins. All Rights Reserved.
+        - generic [ref=e209]:
+          - generic [ref=e210]:
+            - img [ref=e211]
+            - text: Secure Payments
+          - generic [ref=e214]:
+            - img [ref=e215]
+            - text: Cash on Delivery
+          - generic [ref=e218]:
+            - img [ref=e219]
+            - text: Nationwide Delivery
+          - generic [ref=e224]:
+            - img [ref=e225]
+            - text: Made in Pakistan
+  - generic [ref=e308] [cursor=pointer]:
+    - button "Open Next.js Dev Tools" [ref=e309]:
+      - img [ref=e310]
+    - generic [ref=e313]:
+      - button "Open issues overlay" [ref=e314]:
+        - generic [ref=e315]:
+          - generic [ref=e316]: "0"
+          - generic [ref=e317]: "1"
+        - generic [ref=e318]: Issue
+      - button "Collapse issues badge" [ref=e319]:
+        - img [ref=e320]
+  - alert [ref=e322]

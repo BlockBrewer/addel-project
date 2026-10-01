@@ -1,0 +1,15 @@
+[    4642ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:14537
+[    4847ms] [WARNING] Image with src "http://localhost:8000/fitrat/desi-ghee.png" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_b0daae9a._.js:1014
+[    4848ms] [WARNING] Image with src "http://localhost:8000/fitrat/honey.png" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_b0daae9a._.js:1014
+[    4849ms] [WARNING] Image with src "http://localhost:8000/fitrat/butter.png" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_b0daae9a._.js:1014
+[    4850ms] [WARNING] Image with src "http://localhost:8000/fitrat/mustard-oil.png" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_b0daae9a._.js:1014
+[    4850ms] [WARNING] Image with src "http://localhost:8000/fitrat/olive-oil.png" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_b0daae9a._.js:1014
+[    4942ms] [WARNING] Image with src "http://localhost:8000/fitrat/honey.png" was detected as the Largest Contentful Paint (LCP). Please add the "priority" property if this image is above the fold.
+Read more: https://nextjs.org/docs/api-reference/next/image#priority @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_b0daae9a._.js:1014
+[    4968ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5956
+[    4985ms] [LOG] [Fast Refresh] done in 119ms @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5816

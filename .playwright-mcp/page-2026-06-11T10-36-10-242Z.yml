@@ -1,0 +1,69 @@
+- main [ref=e2]:
+  - navigation [ref=e5]:
+    - button "Menu" [ref=e12] [cursor=pointer]
+    - link "Medusa Store" [ref=e14] [cursor=pointer]:
+      - /url: /dk
+    - generic [ref=e15]:
+      - link "Account" [ref=e17] [cursor=pointer]:
+        - /url: /dk/account
+      - button "Cart (0)" [ref=e20] [cursor=pointer]:
+        - link "Cart (0)" [ref=e21]:
+          - /url: /dk/cart
+  - generic [ref=e23]:
+    - generic [ref=e24]:
+      - heading "Ecommerce Starter Template" [level=1] [ref=e25]
+      - heading "Powered by Medusa and Next.js" [level=2] [ref=e26]
+    - link "View on GitHub" [ref=e27] [cursor=pointer]:
+      - /url: https://github.com/medusajs/dtc-starter
+      - button "View on GitHub" [ref=e28]:
+        - text: View on GitHub
+        - img [ref=e29]
+  - generic [ref=e33]:
+    - list
+  - generic [ref=e35]:
+    - generic [ref=e36]:
+      - link "Medusa Store" [ref=e38] [cursor=pointer]:
+        - /url: /dk
+      - generic [ref=e39]:
+        - generic [ref=e40]:
+          - generic [ref=e41]: Categories
+          - list [ref=e42]:
+            - listitem [ref=e43]:
+              - link "Sweatshirts" [ref=e44] [cursor=pointer]:
+                - /url: /dk/categories/sweatshirts
+              - list
+            - listitem [ref=e45]:
+              - link "Shirts" [ref=e46] [cursor=pointer]:
+                - /url: /dk/categories/shirts
+              - list
+            - listitem [ref=e47]:
+              - link "Pants" [ref=e48] [cursor=pointer]:
+                - /url: /dk/categories/pants
+              - list
+            - listitem [ref=e49]:
+              - link "Merch" [ref=e50] [cursor=pointer]:
+                - /url: /dk/categories/merch
+              - list
+        - generic [ref=e51]:
+          - generic [ref=e52]: Medusa
+          - list [ref=e53]:
+            - listitem [ref=e54]:
+              - link "GitHub" [ref=e55] [cursor=pointer]:
+                - /url: https://github.com/medusajs
+            - listitem [ref=e56]:
+              - link "Documentation" [ref=e57] [cursor=pointer]:
+                - /url: https://docs.medusajs.com
+            - listitem [ref=e58]:
+              - link "Source code" [ref=e59] [cursor=pointer]:
+                - /url: https://github.com/medusajs/dtc-starter
+    - generic [ref=e60]:
+      - paragraph [ref=e61]: © 2026 Medusa Store. All rights reserved.
+      - paragraph [ref=e62]:
+        - text: Powered by
+        - link [ref=e63] [cursor=pointer]:
+          - /url: https://www.medusajs.com
+          - img [ref=e64]
+        - text: "&"
+        - link [ref=e66] [cursor=pointer]:
+          - /url: https://nextjs.org
+          - img [ref=e67]

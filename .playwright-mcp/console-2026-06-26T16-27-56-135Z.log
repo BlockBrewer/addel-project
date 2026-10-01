@@ -1,0 +1,29 @@
+[     357ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:14537
+[     440ms] [WARNING] Image with src "http://localhost:8000/fitrat/desi-ghee.png" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_b0daae9a._.js:1014
+[     441ms] [WARNING] Image with src "http://localhost:8000/fitrat/honey.png" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_b0daae9a._.js:1014
+[     442ms] [WARNING] Image with src "http://localhost:8000/fitrat/butter.png" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_b0daae9a._.js:1014
+[     442ms] [WARNING] Image with src "http://localhost:8000/fitrat/mustard-oil.png" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_b0daae9a._.js:1014
+[     443ms] [WARNING] Image with src "http://localhost:8000/fitrat/olive-oil.png" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_b0daae9a._.js:1014
+[     443ms] [WARNING] Image with src "http://localhost:8000/fitrat/desi-ghee.png" was detected as the Largest Contentful Paint (LCP). Please add the "priority" property if this image is above the fold.
+Read more: https://nextjs.org/docs/api-reference/next/image#priority @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_b0daae9a._.js:1014
+[     443ms] [WARNING] Image with src "http://localhost:8000/fitrat/honey.png" was detected as the Largest Contentful Paint (LCP). Please add the "priority" property if this image is above the fold.
+Read more: https://nextjs.org/docs/api-reference/next/image#priority @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_b0daae9a._.js:1014
+[    4716ms] [WARNING] Image with src "http://localhost:8000/fitrat/olive-oil.png" was detected as the Largest Contentful Paint (LCP). Please add the "priority" property if this image is above the fold.
+Read more: https://nextjs.org/docs/api-reference/next/image#priority @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_b0daae9a._.js:1014
+[  303380ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5956
+[  303581ms] [LOG] [Fast Refresh] done in 228ms @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5816
+[  311429ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5956
+[  311639ms] [LOG] [Fast Refresh] done in 133ms @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5816
+[  322254ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5956
+[  322330ms] [LOG] [Fast Refresh] done in 152ms @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5816
+[  327662ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5956
+[  327725ms] [LOG] [Fast Refresh] done in 139ms @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5816
+[  336461ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5956
+[  336528ms] [LOG] [Fast Refresh] done in 145ms @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5816
+[  345264ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5956
+[  345482ms] [LOG] [Fast Refresh] done in 123ms @ http://localhost:8000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5816
