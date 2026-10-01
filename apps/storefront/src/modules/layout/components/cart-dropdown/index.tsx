@@ -16,6 +16,7 @@ import LocalizedClientLink from "@modules/common/components/localized-client-lin
 import Thumbnail from "@modules/products/components/thumbnail"
 import { usePathname } from "next/navigation"
 import { Fragment, useEffect, useRef, useState } from "react"
+import { Cart } from "@modules/home/components/icons"
 
 const CartDropdown = ({
   cart: cartState,
@@ -82,10 +83,19 @@ const CartDropdown = ({
       <Popover className="relative h-full">
         <PopoverButton className="h-full">
           <LocalizedClientLink
-            className="hover:text-ui-fg-base"
+            className="relative flex h-full items-center text-aqua-navy hover:text-aqua"
             href="/cart"
+            aria-label={`Cart (${totalItems})`}
             data-testid="nav-cart-link"
-          >{`Cart (${totalItems})`}</LocalizedClientLink>
+          >
+            <Cart className="h-7 w-7" strokeWidth={1.8} />
+            <span
+              className="absolute -right-2 -top-1 flex h-5 min-w-5 items-center justify-center rounded-full bg-aqua px-1 text-[11px] font-semibold leading-none text-white"
+              data-testid="nav-cart-count"
+            >
+              {totalItems}
+            </span>
+          </LocalizedClientLink>
         </PopoverButton>
         <Transition
           show={cartDropdownOpen}
@@ -208,12 +218,12 @@ const CartDropdown = ({
                   <div className="bg-gray-900 text-small-regular flex items-center justify-center w-6 h-6 rounded-full text-white">
                     <span>0</span>
                   </div>
-                  <span>Your shopping bag is empty.</span>
+                  <span>Your cart is empty.</span>
                   <div>
                     <LocalizedClientLink href="/store">
                       <>
                         <span className="sr-only">Go to all products page</span>
-                        <Button onClick={close}>Explore products</Button>
+                        <Button onClick={close}>Explore designs</Button>
                       </>
                     </LocalizedClientLink>
                   </div>

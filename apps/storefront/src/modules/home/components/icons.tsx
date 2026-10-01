@@ -181,3 +181,104 @@ export const Whatsapp = (p: IconProps) => (
     <path d="M8.5 8.8c.3-.8.6-.8 1-.8.4 0 .7.1 1 .9.2.5.6 1.5.6 1.6.1.2 0 .4-.1.6l-.5.6c-.2.2-.3.3-.1.6.2.4.8 1.2 1.6 1.7.7.5 1 .5 1.2.4.2-.1.6-.7.8-.9.2-.3.4-.2.6-.1.3.1 1.5.7 1.7.9.2.1.4.2.4.3 0 .3-.1.9-.5 1.3-.4.4-1.2.7-1.8.7-.7 0-2.2-.4-3.7-1.6-1.6-1.3-2.4-2.9-2.6-3.4-.2-.5-.3-1.1.2-1.8Z" />
   </svg>
 )
+
+export const Menu = (p: IconProps) => (
+  <svg {...base({ strokeWidth: 2, ...p })}>
+    <path d="M4 7h16M4 12h16M4 17h16" />
+  </svg>
+)
+
+export const ChevronLeft = (p: IconProps) => (
+  <svg {...base({ strokeWidth: 2, ...p })}>
+    <path d="m15 18-6-6 6-6" />
+  </svg>
+)
+
+export const ChevronRight = (p: IconProps) => (
+  <svg {...base({ strokeWidth: 2, ...p })}>
+    <path d="m9 18 6-6-6-6" />
+  </svg>
+)
+
+export const Infinity = (p: IconProps) => (
+  <svg {...base({ viewBox: "0 0 48 24", width: 48, strokeWidth: 2.4, ...p })}>
+    <path d="M24 12c-3-5-6-8-10-8a8 8 0 1 0 0 16c4 0 7-3 10-8Zm0 0c3 5 6 8 10 8a8 8 0 1 0 0-16c-4 0-7 3-10 8Z" />
+  </svg>
+)
+
+export const Refresh = (p: IconProps) => (
+  <svg {...base({ strokeWidth: 2, ...p })}>
+    <path d="M20 11a8 8 0 0 0-14.5-4M4 13a8 8 0 0 0 14.5 4" />
+    <path d="M20 4v5h-5M4 20v-5h5" />
+  </svg>
+)
+
+export const Award = (p: IconProps) => (
+  <svg {...base(p)}>
+    <circle cx="12" cy="9" r="6" />
+    <path d="m9.2 9 2 2 3.6-3.8" />
+    <path d="m8.5 14-2 7 5.5-3 5.5 3-2-7" />
+  </svg>
+)
+
+export const Cart = (p: IconProps) => (
+  <svg {...base(p)}>
+    <path d="M2 3h3l2.4 12.2a1 1 0 0 0 1 .8h9.4a1 1 0 0 0 1-.8L20 7H6" />
+    <circle cx="9.5" cy="20" r="1.4" />
+    <circle cx="17" cy="20" r="1.4" />
+  </svg>
+)
+
+export const Download = (p: IconProps) => (
+  <svg {...base(p)}>
+    <path d="M12 4v11m0 0-4-4m4 4 4-4" />
+    <path d="M5 19h14" />
+  </svg>
+)
+
+export const Pencil = (p: IconProps) => (
+  <svg {...base(p)}>
+    <path d="m16 3 5 5L8 21H3v-5L16 3Z" />
+    <path d="m13.5 5.5 5 5" />
+  </svg>
+)
+
+export const Customize = (p: IconProps) => (
+  <svg {...base(p)}>
+    <rect x="5" y="8" width="14" height="13" rx="2" />
+    <path d="M9 8V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3M12 12v5M9.5 14.5h5" />
+  </svg>
+)
+
+export const Pinterest = (p: IconProps) => (
+  <svg {...base(p)}>
+    <circle cx="12" cy="12" r="9" />
+    <path d="M10.5 20 12.6 11.5M9.5 13.5c-1-3 1-5.5 3.5-5.5 2 0 3 1.3 3 3 0 2.2-1.3 3.7-2.8 3.7-1 0-1.6-.7-1.4-1.6" />
+  </svg>
+)
+
+export const TikTok = (p: IconProps) => (
+  <svg {...base(p)}>
+    <path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5M14 3c.3 2.6 1.9 4.3 4.5 4.5" />
+  </svg>
+)
+
+export const Youtube = (p: IconProps) => (
+  <svg {...base(p)}>
+    <rect x="2.5" y="5.5" width="19" height="13" rx="4" />
+    <path d="m10 9.5 5 2.5-5 2.5v-5Z" fill="currentColor" />
+  </svg>
+)
+
+export const Sparkle = (p: IconProps) => (
+  <svg {...base({ fill: "currentColor", stroke: "none", ...p })}>
+    <path d="m12 2 1.6 6.4L20 10l-6.4 1.6L12 18l-1.6-6.4L4 10l6.4-1.6L12 2Zm7 12 .8 3.2L23 18l-3.2.8L19 22l-.8-3.2L15 18l3.2-.8L19 14Z" />
+  </svg>
+)
+
+export const Chat = (p: IconProps) => (
+  <svg {...base(p)}>
+    <path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z" />
+    <path d="M8.5 12h.01M12 12h.01M15.5 12h.01" strokeWidth={2.4} />
+  </svg>
+)

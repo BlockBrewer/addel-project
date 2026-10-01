@@ -33,22 +33,15 @@ module.exports = {
           80: "#1F2937",
           90: "#111827",
         },
-        // Fitrat Origins brand palette
-        forest: {
-          DEFAULT: "#1c3d29",
-          dark: "#0f2a1b",
-          deep: "#13311f",
-          light: "#2a5238",
-        },
-        gold: {
-          DEFAULT: "#c9a24e",
-          dark: "#ab8636",
-          light: "#e0c98a",
-        },
-        cream: {
-          DEFAULT: "#f6f1e6",
-          dark: "#efe6d4",
-          light: "#fbf8f1",
+        // AquaCraft brand palette
+        aqua: {
+          DEFAULT: "#0f9a9a",
+          dark: "#0b7f82",
+          deep: "#087074",
+          navy: "#0d2b3e",
+          light: "#d5f0ef",
+          mist: "#f3fafa",
+          sky: "#3bb5c4",
         },
       },
       borderRadius: {
@@ -88,7 +81,7 @@ module.exports = {
         ],
         serif: [
           "var(--font-serif)",
-          "Cormorant Garamond",
+          "DM Serif Display",
           "Georgia",
           "Cambria",
           "Times New Roman",

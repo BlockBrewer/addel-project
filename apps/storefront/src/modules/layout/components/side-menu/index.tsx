@@ -12,9 +12,14 @@ import LanguageSelect from "../language-select"
 import { Locale } from "@lib/data/locales"
 
 
-const SideMenuItems = {
+import { CATALOG, categoryHref } from "@lib/constants/catalog"
+import { Menu } from "@modules/home/components/icons"
+
+const SideMenuItems: Record<string, string> = {
   Home: "/",
-  Store: "/store",
+  "All Designs": "/store",
+  ...Object.fromEntries(CATALOG.map((c) => [c.label, categoryHref(c)])),
+  Membership: "/membership",
   Account: "/account",
   Cart: "/cart",
 }
@@ -40,7 +45,8 @@ const SideMenu = ({ regions, locales, currentLocale }: SideMenuProps) => {
                   data-testid="nav-menu-button"
                   className="relative h-full flex items-center transition-all ease-out duration-200 focus:outline-none hover:text-ui-fg-base"
                 >
-                  Menu
+                  <Menu className="h-7 w-7" />
+                  <span className="sr-only">Menu</span>
                 </Popover.Button>
               </div>
 
@@ -72,13 +78,13 @@ const SideMenu = ({ regions, locales, currentLocale }: SideMenuProps) => {
                         <XMark />
                       </button>
                     </div>
-                    <ul className="flex flex-col gap-6 items-start justify-start">
+                    <ul className="flex flex-col gap-3 items-start justify-start overflow-y-auto">
                       {Object.entries(SideMenuItems).map(([name, href]) => {
                         return (
                           <li key={name}>
                             <LocalizedClientLink
                               href={href}
-                              className="text-3xl leading-10 hover:text-ui-fg-disabled"
+                              className="text-2xl leading-9 hover:text-ui-fg-disabled"
                               onClick={close}
                               data-testid={`${name.toLowerCase()}-link`}
                             >
@@ -127,7 +133,7 @@ const SideMenu = ({ regions, locales, currentLocale }: SideMenuProps) => {
                         />
                       </div>
                       <Text className="flex justify-between txt-compact-small">
-                        © {new Date().getFullYear()} Medusa Store. All rights
+                        © {new Date().getFullYear()} AquaCraft. All rights
                         reserved.
                       </Text>
                     </div>

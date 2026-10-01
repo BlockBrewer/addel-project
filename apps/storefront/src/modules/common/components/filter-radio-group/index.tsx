@@ -20,7 +20,7 @@ const FilterRadioGroup = ({
 }: FilterRadioGroupProps) => {
   return (
     <div className="flex flex-col gap-y-3">
-      <Text className="text-xs font-semibold uppercase tracking-[0.18em] text-gold-dark">
+      <Text className="text-xs font-semibold uppercase tracking-[0.18em] text-aqua-dark">
         {title}
       </Text>
       <RadioGroup data-testid={dataTestId} className="flex flex-col gap-y-2">
@@ -31,7 +31,7 @@ const FilterRadioGroup = ({
               <span
                 className={clx(
                   "h-1.5 w-1.5 shrink-0 rounded-full transition-colors",
-                  active ? "bg-gold" : "bg-forest/15"
+                  active ? "bg-aqua" : "bg-aqua-navy/15"
                 )}
               />
               <RadioGroup.Item
@@ -44,8 +44,8 @@ const FilterRadioGroup = ({
               <Label
                 htmlFor={i.value}
                 className={clx(
-                  "!txt-compact-small !transform-none cursor-pointer transition-colors hover:text-forest",
-                  active ? "font-medium text-forest" : "text-forest/60"
+                  "!txt-compact-small !transform-none cursor-pointer transition-colors hover:text-aqua-navy",
+                  active ? "font-medium text-aqua-navy" : "text-aqua-navy/60"
                 )}
                 data-testid="radio-label"
                 data-active={active}
